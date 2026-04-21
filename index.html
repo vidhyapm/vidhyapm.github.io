@@ -3,54 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr. Vidhya P. M</title>
+
+  <meta name="description" content="Cybersecurity, SOC Analyst, and AI Security Portfolio - Dr. Vidhya P. M">
+
+  <title>Dr. Vidhya P. M | Cybersecurity Engineer</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
     .hero {
       background: linear-gradient(135deg, #0d6efd, #0a58ca);
       color: white;
-      padding: 80px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
+
     .section-title {
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
+
     .card {
       border: none;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">Dr. Vidhya P. M</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <a class="navbar-brand fw-bold" href="#about">Dr. Vidhya P. M</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
-  <h1 class="fw-bold">Dr. Vidhya P. M</h1>
+  <h1 class="fw-bold">Cybersecurity Engineer</h1>
+  <p class="lead">SOC Analyst (ML/AI) | Digital Forensics | Intrusion Detection Systems</p>
+  <p>Building AI-driven security systems for threat detection, anomaly analysis, and forensic integrity</p>
 </header>
 
 <!-- ABOUT -->
@@ -58,35 +68,35 @@
   <h2 class="section-title">About Me</h2>
   <p>
     Cybersecurity and AI professional with 18+ years of experience in academia and applied system development.
-    Specialized in building ML-based intrusion detection systems, anomaly detection pipelines, and digital forensics frameworks
-    with tamper-evident logging and cryptographic integrity.
+    Specialized in building ML-based intrusion detection systems, SOC-style log analysis pipelines, and digital forensics frameworks
+    with cryptographic integrity (SHA-256) and anomaly detection techniques.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="bg-light py-5">
+<section class="bg-light py-5">
   <div class="container">
     <h2 class="section-title">Core Skills</h2>
-    <div class="row">
+    <div class="row g-3">
 
       <div class="col-md-4">
         <div class="card p-3">
           <h5>Cybersecurity</h5>
-          <p>IDS, SOC workflows, anomaly detection, digital forensics, secure communication</p>
+          <p>IDS, SOC workflows, threat detection, digital forensics, secure communication</p>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card p-3">
           <h5>AI / ML Security</h5>
-          <p>Random Forest, SVM, Isolation Forest, time-series anomaly detection</p>
+          <p>Random Forest, SVM, Isolation Forest, anomaly detection, time-series analysis</p>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card p-3">
-          <h5>Engineering Stack</h5>
-          <p>Python, Flask, Scikit-learn, PyTorch, SQL, Linux, Git</p>
+          <h5>Tech Stack</h5>
+          <p>Python, Flask, Scikit-learn, PyTorch, SQL, Linux, Git, APIs</p>
         </div>
       </div>
 
@@ -95,36 +105,44 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="container py-5">
-  <h2 class="section-title">Featured Security Projects</h2>
+<section class="container py-5">
+  <h2 class="section-title">SOC & Security Projects</h2>
 
-  <div class="row">
+  <div class="row g-3">
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-6">
       <div class="card p-3">
         <h5>AI Intrusion Detection System</h5>
-        <p>ML-based IDS using UNSW-NB15 dataset with 99.75% detection accuracy using ensemble models.</p>
+        <p>
+          Machine learning-based IDS using UNSW-NB15 dataset achieving high accuracy in attack classification using ensemble models.
+        </p>
       </div>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-6">
       <div class="card p-3">
         <h5>SOC Log Monitoring System</h5>
-        <p>Log ingestion + anomaly detection pipeline simulating SIEM alerting system.</p>
+        <p>
+          Log ingestion and anomaly detection pipeline simulating SIEM-style SOC alert generation.
+        </p>
       </div>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-6">
       <div class="card p-3">
         <h5>Digital Forensics Integrity System</h5>
-        <p>SHA-256 based tamper-evident evidence tracking with blockchain-style logging.</p>
+        <p>
+          SHA-256 based tamper-evident evidence tracking system ensuring forensic data integrity.
+        </p>
       </div>
     </div>
 
-    <div class="col-md-6 mb-3">
+    <div class="col-md-6">
       <div class="card p-3">
         <h5>Real-Time Anomaly Detection API</h5>
-        <p>Flask-based security microservice for SOC alert scoring and classification.</p>
+        <p>
+          Flask-based security microservice for real-time threat scoring and SOC alert classification.
+        </p>
       </div>
     </div>
 
@@ -132,23 +150,23 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="bg-light py-5">
+<section class="bg-light py-5">
   <div class="container">
     <h2 class="section-title">Experience</h2>
 
-    <p><strong>Assistant Professor – Rajagiri School of Engineering & Technology (2023–Present)</strong><br>
-    Cybersecurity, ML-based IDS, forensic systems, applied AI mentoring.</p>
+    <p><strong>Assistant Professor (Cybersecurity & AI)</strong><br>
+    Rajagiri School of Engineering & Technology (2023–Present)</p>
 
-    <p><strong>Associate Professor – SNGCE (2007–2023)</strong><br>
-    Cybersecurity research, ML-based security systems, secure communication.</p>
+    <p><strong>Associate Professor (CSE)</strong><br>
+    SNGCE (2007–2023)</p>
 
     <p><strong>Software Engineer (Early Career)</strong><br>
-    Java, .NET, SQL-based enterprise systems.</p>
+    Java, .NET, SQL-based enterprise systems</p>
   </div>
 </section>
 
 <!-- RESEARCH -->
-<section id="research" class="container py-5">
+<section class="container py-5">
   <h2 class="section-title">Research Focus</h2>
   <ul>
     <li>Intrusion Detection Systems (AI-driven SOC analytics)</li>
@@ -160,18 +178,13 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="bg-dark text-white py-5">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: vidhya.mohanan@gmail.com</p>
-    <p>Location: Ernakulam, Kerala, India</p>
-  </div>
-</section>
-
-<footer class="text-center py-3 bg-black text-white">
-  <p>© 2026 Dr. Vidhya P. M | Cybersecurity & AI Portfolio</p>
+<footer>
+  <p>Email: vidhya.mohanan@gmail.com</p>
+  <p>Ernakulam, Kerala, India</p>
+  <p>© 2026 Dr. Vidhya P. M | Cybersecurity Portfolio</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html> any error
+</html>
